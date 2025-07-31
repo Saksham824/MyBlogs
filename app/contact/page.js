@@ -10,6 +10,7 @@ import {
   User,
   MessageCircle,
 } from "lucide-react";
+import Link from "next/link";
 
 const ContactPage = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -63,15 +64,15 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="flex gap-4 mt-4">
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
+            <Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
               <Twitter className="w-6 h-6" />
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
+            </Link>
+            <Link href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
               <Github className="w-6 h-6" />
-            </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
+            </Link>
+            <Link href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
               <Linkedin className="w-6 h-6" />
-            </a>
+            </Link>
           </div>
         </div>
 

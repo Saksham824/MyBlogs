@@ -1,4 +1,5 @@
-// src/pages/About.jsx
+'use client'
+import Link from "next/link";
 import React from "react";
 
 const profiles = [
@@ -83,7 +84,7 @@ export default function About() {
               <p className="text-indigo-600 font-medium">{profile.role}</p>
               <p className="mt-3 text-gray-600">{profile.bio}</p>
               <div className="mt-5 flex justify-center gap-5">
-                <a
+                <Link
                   href={profile.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -93,8 +94,8 @@ export default function About() {
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M22.46 6c-.77.35-1.6.59-2.47.7a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04A4.28 4.28 0 0 0 16.11 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.11.99C7.69 9.09 4.07 7.38 1.64 4.89c-.37.63-.58 1.36-.58 2.14 0 1.48.75 2.78 1.89 3.54a4.23 4.23 0 0 1-1.94-.54v.05c0 2.07 1.47 3.8 3.42 4.19-.36.1-.74.16-1.13.16-.28 0-.54-.03-.8-.08.54 1.7 2.12 2.94 3.99 2.97A8.6 8.6 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.7 8.7 0 0 0 24 4.59a8.48 8.48 0 0 1-2.54.7z" />
                   </svg>
-                </a>
-                <a
+                </Link>
+                <Link
                   href={profile.github}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -104,8 +105,8 @@ export default function About() {
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48C19.13 20.58 22 16.76 22 12.26 22 6.58 17.52 2 12 2z" />
                   </svg>
-                </a>
-                <a
+                </Link>
+                <Link
                   href={`mailto:${profile.email}`}
                   className="text-red-500 hover:text-red-700 transition"
                   aria-label="Email"
@@ -113,7 +114,7 @@ export default function About() {
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8.99l8 6.99 8-6.99V18z" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
