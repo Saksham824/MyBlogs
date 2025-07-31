@@ -5,9 +5,10 @@ import { Github } from 'lucide-react';
 import { Linkedin } from "lucide-react";
 import Link from "next/link";
 
+
 const posts = [
     {
-        id: 1,
+        
         slug: "mastering-react-2024",
         title: "Mastering React in 2024",
         excerpt: "Discover the latest best practices and patterns for building robust React applications.",
@@ -23,7 +24,7 @@ const posts = [
     },
 
     {
-        id: 2,
+        
         slug: "tailwind-css-tips-tricks",
         title: "Tailwind CSS: Tips & Tricks",
         excerpt: "Level up your UI development with these advanced Tailwind CSS techniques.",
@@ -38,7 +39,7 @@ const posts = [
         category: "Design",
     },
     {
-        id: 3,
+    
         slug: "building-accessible-web-apps",
         title: "Building Accessible Web Apps",
         excerpt: "Accessibility is crucial. Learn how to make your apps usable for everyone.",
@@ -53,9 +54,7 @@ const posts = [
         category: "Best Practices",
     },
     {
-
-        id: 4,
-        slug: "nextjs-vs-remix-2024",
+        slug: "nextjs-vs-remix",
         title: "Next.js vs. Remix: The 2024 Showdown",
         excerpt: "A deep dive into the pros and cons of Next.js and Remix for modern web development.",
         image: "https://template.canva.com/EAFhGTLqiWw/2/0/800w-zUUlgcpJzuQ.jpg",
@@ -69,8 +68,7 @@ const posts = [
         category: "Frameworks",
     },
     {
-        id: 5,
-        slug: "state-management-in-react-2024",
+        slug: "state-management-in-react",
         title: "State Management in React: 2024 Edition",
         excerpt: "Explore the latest state management solutions and when to use them.",
         image: "https://template.canva.com/EAGprgtLHp0/1/2/1600w-437-tzbxQ0U.jpg",
@@ -84,8 +82,7 @@ const posts = [
         category: "Development",
     },
     {
-        id: 6,
-        slug: "ui-ux-trends-2024",
+        slug: "ui-ux-trends",
         title: "UI/UX Trends to Watch in 2024",
         excerpt: "Stay ahead of the curve with these emerging UI/UX trends.",
         image: "https://template.canva.com/EAFZwZNdL0E/2/0/1600w-mKj_XMSx26w.jpg",
@@ -99,7 +96,6 @@ const posts = [
         category: "Design",
     },
     {
-        id: 7,
         slug: "building-rest-apis-with-nodejs",
         title: "Building REST APIs with Node.js",
         excerpt: "Learn how to build robust REST APIs using Node.js and Express.",

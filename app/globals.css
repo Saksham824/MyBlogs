@@ -1,7 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import 'prism-themes/themes/prism-vsc-dark-plus.css'; 
+
 
 @custom-variant dark (&:is(.dark *));
+
+.prose h1 { margin-bottom: 2em; }
+.prose h2 { margin-bottom: 1.5em; }
+.prose h3 { margin-bottom: 1.2em; }
+.prose h4, .prose h5, .prose h6 { margin-bottom: 1em; }
 
 @theme inline {
   --color-background: var(--background);
