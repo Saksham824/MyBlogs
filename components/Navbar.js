@@ -38,10 +38,10 @@ const Navbar = () => {
                         </Link>
                         <Button variant="outline">Login</Button>
                         <Button variant="outline">Sign up</Button>
-                    <ModeToggle/>
+                        <ModeToggle />
                     </div>
                     {/* Theme Toggle */}
-                    
+
                     {/* Mobile Hamburger */}
                     <div className="flex items-center md:hidden">
                         <button
